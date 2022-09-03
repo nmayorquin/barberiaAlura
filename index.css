@@ -1,0 +1,24 @@
+body{
+    background: #CCCCCC; 
+    /*sistema hexadecimal: 6 posiciones
+                        2 para el rojo, dos para el verde, dos para el azul: rrggbb rgb()-> red, green blue
+                        la intensidad de en color: 0 1 2 3 4 5 6 7 8 9 A B C D E F -> cero es ausencia de color, f lo contrario a 0
+                        color negro: #000000 y color blanco #ffffff -> una forma de representar el color ó rgb(0, 0, 0)
+
+   
+   
+                            */
+}
+
+.tituloBarberia{
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+em strong{ /*cuando no tengo clases, se selecciona la familia de etiquetas para que sólo aplique allí el cambio de estilo: combinación de selectores*/
+    color:red;
+    font-size: 20px;
+}
