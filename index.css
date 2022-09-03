@@ -10,8 +10,13 @@ body{
                             */
 }
 
+/*DEFINICIÓN DEL ESPACIO DEL TÍTULO*/
 .tituloBarberia{
     text-align: center;
+    height: 150px; /*cambia altura y aisla el título del texto en la parte inferior*/
+    border: 10px solid #000000; /*se crea un borde en el contenedor del título*/
+    padding: 20px; /*padding se usa para crear espacios dentro del contenedor, se puede dar espacio esecífico o general*/
+    margin:40px; /*se crea un espacio por fuera del borde según la medida que se coloque*/
 }
 
 p {
@@ -22,3 +27,13 @@ em strong{ /*cuando no tengo clases, se selecciona la familia de etiquetas para 
     color:red;
     font-size: 20px;
 }
+
+#mision{
+    font-size: 20px;
+}
+
+#banner{
+    width:100%; /*se usa porcentaje para ocupar el porcentaje de la pantalla*/
+}
+
+
