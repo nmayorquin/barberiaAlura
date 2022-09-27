@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style_contacto.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <section class="caja_header">
+            <h1>
+                <img src="/img/logo.png" alt="logo Barbería Alura">
+            </h1>
+            <nav>
+                <!--para paneles de navegación se usa la etiqueta nav....dede html5-->
+                <ul class="navegacion">
+                    <a href="/index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="/productos.html">
+                        <li>PRODUCTOS</li>
+                    </a>
+                    <a href="/contacto.html">
+                        <li>CONTACTO</li>
+                    </a>
+                </ul>
+                
+            </nav>
+    </header>
+            <main>
+                <form action="">
+
+
+                    <label for="nombreapellido">NOMBRE Y APELLIDO</label>
+                    <input type="text" id="nombreapellido" class="input_formulario" required>
+                    
+                    <label for="email"  >CORREO ELECTRÓNICO</label>
+                    <input type="email" id="email" class="input_formulario" required placeholder="email@dominio.com">
+                
+                    <label for="telefono" >TELÉFONO</label>
+                    <input type="tel" id="telefono" class="input_formulario" required placeholder="(xx) xxx xxx xx xx">
+
+                    <label for="mensaje">MENSAJE</label>
+                    <textarea name="" id="mensaje" cols="70" rows="10" class="input_formulario" required></textarea>
+
+                    <fieldset> <!--permite organizar en grupos con el mismo nombre, los campos de un formulario-->
+                        <legend>¿De qué forma quieres ser contactado?</legend>
+                        <label for="correo"><input type="radio" name="contacto" value="email" id="radio-email">E- mail</label>
+                        
+
+                        <label for="tel_radio"> <input type="radio" name="contacto" value="tel_radio" id="radio-tel">Teléfono</label>
+                       
+
+                        <label for="whatsapp"><input type="radio" name="contacto" value="Whatsapp" id="radio-Whatsapp" checked>Whatsapp</label>
+                        <!--el name en los radio funciona para agrupar la selección y sólo poder escoger uno-->
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>En qué horario prefiere ser atendido?</legend> <!--se usa cuando hay escritos dentro del fieldset-->
+                        <select>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                        </select>
+                    </fieldset>
+
+                    <label for=""><input type="checkbox" class="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
+
+                        <input type="submit" value="Enviar formulario" class="enviar">
+                </form>
+
+                <table>
+                    <thead>     <!--encabezado-->                
+                        <tr> 
+                            <th>Día</th> <!--etiqueta de uso del encabezado para la tabla para títulos y queda centralizado por defecto--> 
+                            <th>Horario</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr> <!--fila-->
+                            <td>Lunes</td> <!--columna-->
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </main>
+
+
+            <footer>
+                <img src="/img/logo-blanco.png" alt="logo Barbería Alura">
+                <p class="copyright"> &copy Copyright Barbería Alura - 2022</p> <!--hay caracteres especiales como copyright que se representan con letras en html. Para conocer el de otros simbolos se puede visitar la página https://unicode-table.com/ usar la entidad-->
+            </footer>
+        </section>
+    </header>

@@ -1,0 +1,69 @@
+    /*sistema hexadecimal: 6 posiciones
+                        2 para el rojo, dos para el verde, dos para el azul: rrggbb rgb()-> red, green blue
+                        la intensidad de en color: 0 1 2 3 4 5 6 7 8 9 A B C D E F -> cero es ausencia de color, f lo contrario a 0
+                        color negro: #000000 y color blanco #ffffff -> una forma de representar el color ó rgb(0, 0, 0)
+
+   
+   
+                            */
+
+
+/*DEFINICIÓN DEL ESPACIO DEL TÍTULO*/
+.tituloBarberia{
+    text-align: center;
+    height: 80px; /*cambia altura y aisla el título del texto en la parte inferior*/
+    border: 10px solid #000000; /*se crea un borde en el contenedor del título*/
+    padding-top: 20px; /*padding se usa para crear espacios dentro del contenedor, se puede dar espacio esecífico o general*/
+    margin:40px; /*se crea un espacio por fuera del borde según la medida que se coloque*/
+}
+
+
+.tituloPrincipal{
+    padding-left: 30px;
+}
+
+
+#banner{
+    width:100%; /*se usa porcentaje para ocupar el porcentaje de la pantalla*/
+}
+
+p {
+    text-align: center;
+}
+
+em strong{ /*cuando no tengo clases, se selecciona la familia de etiquetas para que sólo aplique allí el cambio de estilo: combinación de selectores*/
+    color:red;
+    font-size: 20px;
+}
+#mision{
+    font-size: 20px;
+}
+
+
+
+.principal{
+    background: #CCCCCC; 
+    padding: 20px;
+}
+
+.diferenciales__titulo{
+    text-align: center;
+}
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block; /* se le ppide a la lista que ocupe sólo su contenid y que el espaciamiento se puedan acomodar */
+    vertical-align: top; /*el listado se alínea con el borde de la imagen del lado derecho*/ 
+    width: 20%;
+    margin-right: 15%;
+}
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
