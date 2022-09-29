@@ -2,8 +2,10 @@
 <html lang="es"> <!--define el lenguaje-->
 <head> <!--etiquetas informativas-->
     <meta charset="UTF-8"> <!--tolerancia a caracteres especiales-->
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="/style_index.css">
     <title>Barbería Alura</title>
 </head>
@@ -11,26 +13,79 @@
 
     <!--los estilos de las etiquetas se pueden realizar en html con la etiqueta style pero por buenas prácticas se deja todo en un css-->
     <header>
-       <h1 class="tituloPrincipal">BARBERÍA ALURA</h1> 
+        <section class="caja_header">
+            <h1>
+                <img src="/img/logo.png" alt="logo Barbería Alura">
+            </h1>
+            <nav>
+                <!--para paneles de navegación se usa la etiqueta nav....dede html5-->
+                <ul>
+                    <a href="/index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="/productos.html">
+                        <li>PRODUCTOS</li>
+                    </a>
+                    <a href="/contacto.html">
+                        <li>CONTACTO</li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <img id="banner" src="banner.jpg" alt="">
-    <section class="principal">
-        <h2 class="tituloBarberia">Sobre la Barbería Alura</h2> 
-        <p>Ubicada en el corazón de la ciudad, <strong>la Barbería Alura</strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p> 
-        <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong> </em> </p> <!-- etiqueta em para marcar texto en italico: emphasis EN HTML SE HEREDAN EN CASCADA LOS DISEÑOS DE TODO LO QUE LO CONTIENE-->
-        <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p> 
-    </section>
+    <main>
+        <section class="principal"></section>
+            <img class="banner" src="banner.jpg" alt="">
+        
+            <h2 class="titulos">Sobre la Barbería Alura</h2> 
+            
+            <div class="textoBarberiaMision">
+                <img class="utensilios" src="/img/utensilios[1].jpg" alt="utensilios barbería Alura">
+                <p>Ubicada en el corazón de la ciudad,
+                     <strong>la Barbería Alura</strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p> 
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong> </em> </p> <!-- etiqueta em para marcar texto en italico: emphasis EN HTML SE HEREDAN EN CASCADA LOS DISEÑOS DE TODO LO QUE LO CONTIENE-->
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+            </div>
+        </section>
 
-    <section class="diferenciales">
-        <h3 class="diferenciales__titulo">DIFERENCIALES</h3>
-        <ul>
-            <li class="items">Atención personalizada a clientes</li>
-            <li class="items">espacio diferenciado</li>
-            <li class="items">Localización</li>
-            <li class="items">Profesionales calificados</li>
-        </ul>
-        <img class="imagenDiferenciales" src="diferenciales.jpg" alt="">
-    </section>
+        <section class="mapa">
+            <h3 class="titulos">Nuestra ubicación</h3>
+            <p>Nuestro establecimiento está ubicado en el corazón de la ciudad:</p>
+            <div class="mapa-contenido">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4499774664932!2d-46.63452058472052!3d-23.58818986846933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses!2sco!4v1664331935691!5m2!1ses!2sco" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--etiqueta que sirve para colocar visuales, en este caso, un mapa de google maps-->
+            </div>
+
+        </section>
+
+        <section class="diferenciales">
+            <h3 class="titulos">Diferenciales</h3>
+            <div class="contenido-diferenciales">
+                <ul class="lista-diferenciales">
+                    <li class="items">Atención personalizada a clientes</li>
+                    <li class="items">espacio diferenciado</li>
+                    <li class="items">Localización</li>
+                    <li class="items">Profesionales calificados</li>
+                    <li class="items">Puntualidad</li>
+                    <li class="items">Limpieza</li>
+                </ul><img class="imagenDiferenciales" src="diferenciales.jpg" alt="">
+            </div>
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            
+        </section>
+
+
+
+
+    </main>
+    
+
+    <footer>
+        <img src="/img/logo-blanco.png" alt="logo Barbería Alura">
+        <p class="copyright"> &copy Copyright Barbería Alura - 2022</p> <!--hay caracteres especiales como copyright que se representan con letras en html. Para conocer el de otros simbolos se puede visitar la página https://unicode-table.com/ usar la entidad-->
+    </footer>
     
 
 </body>
